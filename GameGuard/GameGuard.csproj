@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>GameGuard</AssemblyName>
+    <RootNamespace>GameGuard</RootNamespace>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <Product>GameGuard</Product>
+    <Company>GameGuard Open Source Contributors</Company>
+    <Copyright>Copyright (c) 2026 GameGuard Contributors (MIT License)</Copyright>
+    <Description>Open-Source Real-Time Gaming Process Guardian, Strict Whitelist Enforcer &amp; RAM Optimizer for Windows</Description>
+    <Version>1.0.0</Version>
+    <FileVersion>1.0.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="9.0.0" />
+    <PackageReference Include="System.ServiceProcess.ServiceController" Version="9.0.0" />
+  </ItemGroup>
+
+</Project>

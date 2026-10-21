@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="GameGuard.Setup/GameGuard.Setup.csproj" />
+  <Project Path="GameGuard/GameGuard.csproj" />
+</Solution>

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>GameGuard_Setup</AssemblyName>
+    <RootNamespace>GameGuard.Setup</RootNamespace>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>..\GameGuard\app.ico</ApplicationIcon>
+    <Product>GameGuard Setup</Product>
+    <Company>GameGuard Open Source Contributors</Company>
+    <Copyright>Copyright (c) 2026 GameGuard Contributors (MIT License)</Copyright>
+    <Version>1.0.0</Version>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>false</SelfContained>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="payload.zip" Condition="Exists('payload.zip')" />
+  </ItemGroup>
+
+</Project>
